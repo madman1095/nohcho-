@@ -202,6 +202,4 @@ while task.wait() do
         end
     end
          end
-         
-   end,
 })
