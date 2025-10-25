@@ -37,6 +37,10 @@ local Window = Rayfield:CreateWindow({
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
+_G.FriendColor = Color3.fromRGB(0, 0, 255)
+_G.EnemyColor = Color3.fromRGB(255, 0, 0)
+_G.UseTeamColor = true
+})
 local MainTab = Window:CreateTab("ЦIено", nil)
 
 local MainSection = MainTab:CreateSection("КIегар")
@@ -52,12 +56,7 @@ local Button = Tab:CreateButton({
    Name = "ESP",
    Callback = function()
    -- The function that takes place when the button is pressed
-         _G.FriendColor = Color3.fromRGB(0, 0, 255)
-_G.EnemyColor = Color3.fromRGB(255, 0, 0)
-_G.UseTeamColor = true
-
---------------------------------------------------------------------
-local Holder = Instance.new("Folder", game.CoreGui)
+	local Holder = Instance.new("Folder", game.CoreGui)
 Holder.Name = "ESP"
 
 local Box = Instance.new("BoxHandleAdornment")
@@ -201,5 +200,7 @@ while task.wait() do
             esp(v, _G.UseTeamColor and v.TeamColor.Color or ((plr.TeamColor == v.TeamColor) and _G.FriendColor or _G.EnemyColor))
         end
     end
-         end
+	end
+	
+    end
 })
