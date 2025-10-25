@@ -49,7 +49,7 @@ Rayfield:Notify({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Button Example",
+   Name = "Экстрасенсорни кхетам",
    Callback = function()
          repeat task.wait() until game:IsLoaded()
  
