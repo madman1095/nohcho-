@@ -39,7 +39,7 @@ local Window = Rayfield:CreateWindow({
 })
 local MainTab = Window:CreateTab("Players", nil)
 
-local MainSection = MainTab:CreateSection("Quickly climb")
+local MainSection = MainTab:CreateSection("ESP")
 
 Rayfield:Notify({
    Title = "Notification Title",
