@@ -48,7 +48,7 @@ Rayfield:Notify({
    Image = 4483362458,
 })
 
-local Button = Tab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Button Example",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/madman1095/esp/refs/heads/main/esp.lua"))()
