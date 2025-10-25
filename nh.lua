@@ -47,3 +47,11 @@ Rayfield:Notify({
    Duration = 6.5,
    Image = 4483362458,
 })
+
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
+   end,
+})
