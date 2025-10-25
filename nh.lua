@@ -5,13 +5,12 @@ local Window = Library.CreateLib("NOHCHO HUB", "RJTheme3")
 
 local Tab = Window:NewTab("Players")
 
-local Section = Tab:NewSection("Quick Jump")
+local Section = Tab:NewSection("Players")
 
-Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+Section:NewToggle("Quick jump", "ToggleInfo", function(state)
     if state then
         while wait() do
           game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
-        end
     else
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
     end
