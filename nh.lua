@@ -49,9 +49,8 @@ Rayfield:Notify({
 })
 
 local Button = Tab:CreateButton({
-   Name = "ESP",
+   Name = "Button Example",
    Callback = function()
-   -- The function that takes place when the button is pressed
- loadstring(game:HttpGet("https://raw.githubusercontent.com/madman1095/esp/refs/heads/main/esp.lua"))()
-      end
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/madman1095/esp/refs/heads/main/esp.lua"))()
+   end,
 })
