@@ -37,9 +37,9 @@ local Window = Rayfield:CreateWindow({
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
-local MainTab = Window:CreateTab("Players", nil)
+local Tab = Window:CreateTab("Players", nil)
 
-local MainSection = Tab:CreateSection("Quickly climb")
+local Section = Tab:CreateSection("Quickly climb")
 
 Rayfield:Notify({
    Title = "Notification Title",
