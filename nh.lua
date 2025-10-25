@@ -47,6 +47,3 @@ Rayfield:Notify({
    Duration = 6.5,
    Image = 4483362458,
 })
-
- end,
-})
